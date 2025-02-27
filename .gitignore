@@ -1,1 +1,29 @@
-/target
+# Ignore target directory and Cargo.lock (if library)
+target/
+Cargo.lock
+
+# Ignore build artifacts
+**/*.rs.bk
+
+# Ignore IDE/editor-specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore test & benchmarking artifacts
+debug/
+benchmarks/
+
+# Ignore Rustup & Cargo related files
+.cargo/
+rustup/
+
+# Ignore compiled binaries (if applicable)
+*.exe
+*.out
+*.dSYM/
